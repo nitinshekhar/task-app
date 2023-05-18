@@ -25,11 +25,11 @@ const authenticatedTaskStore = (set) => ({
       }),
     }));
   },
-  handleChange: (id) => {
+  handleChange: (id, userId) => {
     set((state) => ({
       tasks: state.tasks.map((task) => {
       //  if (task.id === id) {
-        if (task.id === id && task.userId === state.userId) {
+        if (task.id === id && task.userId === userId) {
           return {
             ...task,
             completed: !task.completed,

@@ -54,7 +54,7 @@ const TaskItem = ({ itemProp }) => {
         <input
           type="checkbox" id="list"
           checked={itemProp.completed}
-          onChange={() => handleChange(itemProp.id)}
+          onChange={() => handleChange(itemProp.id, userId)}
         />
         <button onClick={handleEditing}>
           <AiFillEdit
