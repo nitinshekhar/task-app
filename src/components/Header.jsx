@@ -14,10 +14,10 @@ const Header = () => {
   return (
     <header style={headerStyle} className={styles.header}>
       {isAuthenticated && (
-        <h1>{user.name} Task List</h1>
+        <h1>{user.name} Reminder List</h1>
       )}
       {!isAuthenticated && (
-        <h1>Task List</h1>
+        <h1>Reminder List</h1>
       )}
       
       <p>Items will persist in the browser local storage</p>

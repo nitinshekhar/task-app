@@ -40,7 +40,7 @@ const InputTask = () => {
         <input
           id="task"
           type="text"
-          placeholder="Add Task..."
+          placeholder="Add Reminder..."
           value={title}
           onChange={handleChange}
           className="input-text"
